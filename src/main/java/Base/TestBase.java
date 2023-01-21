@@ -15,9 +15,10 @@ public class TestBase {
 		WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies(); // This method delete all cookies form webpagee.
 		driver.get(ReadData.readPropertyFile("url"));
 		//driver.get("https://www.saucedemo.com/");
 	}
      
 }
+
